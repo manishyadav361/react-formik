@@ -1,7 +1,14 @@
 import React from "react";
 
 const example1 = () => {
-  return <div>example1</div>;
+  const clickMe = () => {
+    alert("you clicked me!!");
+  };
+  return (
+    <div>
+      <button onClick={clickMe}>click me </button>
+    </div>
+  );
 };
 
 export default example1;
